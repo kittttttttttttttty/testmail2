@@ -1,1 +1,36 @@
-<text style= "color: orange">balloon</text>
+<style>
+@keyframes test {
+ 20%   {background-color: red;}
+ 40%   {background-color: orange;}
+ 60%  {background-color: yellow;}
+ 80%  {background-color: lime;}
+ 90% {background-color: blue;}
+}
+.button {
+ padding: 15px 25px;
+ font-size: 24px;
+ text-align: center;
+ cursor: pointer;
+ outline: none;
+ color: #fff;
+ background-color: purple;
+ border: none;
+ border-radius: 15px;
+ box-shadow: 0 9px #999;
+ animation-name: test;
+ animation-duration: 1s;
+ animation-iteration-count: 100000000000000;
+ width: 200px;
+ height: 200px;
+ font-sh
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+ background-color: #3e8e41;
+ box-shadow: 0 1px #666;
+ transform: translateY(6px);
+}
+</style>
+<button class="button">THIS IS A BUTTON</button>
