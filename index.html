@@ -1,36 +1,419 @@
+<body style="background-color: aqua">
 <style>
-@keyframes test {
- 20%   {background-color: red;}
- 40%   {background-color: orange;}
- 60%  {background-color: yellow;}
- 80%  {background-color: lime;}
- 90% {background-color: blue;}
-}
-.button {
- padding: 15px 25px;
- font-size: 24px;
- text-align: center;
- cursor: pointer;
- outline: none;
- color: #fff;
- background-color: purple;
- border: none;
- border-radius: 15px;
- box-shadow: 0 9px #999;
- animation-name: test;
- animation-duration: 1s;
- animation-iteration-count: 100000000000000;
- width: 200px;
- height: 200px;
- font-sh
-}
-
-.button:hover {background-color: #3e8e41}
-
-.button:active {
- background-color: #3e8e41;
- box-shadow: 0 1px #666;
- transform: translateY(6px);
+article {
+  float: right;
+  width: 89.5%;
+  background-color: aqua;
+  height: 500px;
 }
 </style>
-<button class="button">THIS IS A BUTTON</button>
+  <article>
+   <style type="text/css">
+  .shipbutton {
+    width: 200px;
+    height: 200px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    font-size: 30px;
+    background-color: black;
+    
+  }
+            body {
+              padding: 0;
+              margin: 0;
+            }
+
+            svg:not(:root) {
+              display: block;
+            }
+
+            .playable-code {
+              background-color: #f4f7f8;
+              border: none;
+              border-left: 6px solid #558abb;
+              border-width: medium medium medium 6px;
+              color: #4d4e53;
+              height: 100px;
+              width: 90%;
+              padding: 10px 10px 0;
+            }
+
+            .playable-canvas {
+              border: 1px solid #4d4e53;
+              border-radius: 2px;
+            }
+
+            .playable-buttons {
+              text-align: right;
+              width: 90%;
+              padding: 5px 10px 5px 26px;
+            }
+        </style>
+        
+        <title>&lt;input type=&#34;color&#34;&gt; - Example - code sample</title>
+    </head>
+    <body>          
+<label for="colorWell">Ship Color:</label>
+<input type="color" value="#ff0000" id="colorWell">
+      <button class="shipbutton"><text style="background-color: black; text-align: top;">kittysabode</text></button>
+
+        
+            <script>
+                var colorWell;
+var defaultColor = "#000000";
+
+window.addEventListener("load", startup, false);
+
+function startup() {
+  colorWell = document.querySelector("#colorWell");
+  colorWell.value = defaultColor;
+  colorWell.addEventListener("input", updateFirst, false);
+  colorWell.addEventListener("change", updateAll, false);
+  colorWell.select();
+}
+
+function updateFirst(event) {
+  var button = document.querySelector("button");
+
+  if (button) {
+    button.style.background = event.target.value;
+  }
+}
+function updateAll(event) {
+  document.querySelectorAll("button").forEach(function(button) {
+    button.style.background = event.target.value;
+  });
+}
+</script>
+      <style type="text/css">
+  .ship {
+    width: 200px;
+    height: 200px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    font-size: 30px;
+    background-color: black;
+    
+  }
+            body {
+              padding: 0;
+              margin: 0;
+            }
+
+            svg:notnot(:root) {
+              display: block;
+            }
+
+            .code {
+              background-color: #f4f7f8;
+              border: none;
+              border-left: 6px solid #558abb;
+              border-width: medium medium medium 6px;
+              color: #4d4e53;
+              height: 100px;
+              width: 90%;
+              padding: 10px 10px 0;
+            }
+
+            .canvas {
+              border: 1px solid #4d4e53;
+              border-radius: 2px;
+            }
+
+            .buttons {
+              text-align: right;
+              width: 90%;
+              padding: 5px 10px 5px 26px;
+            }
+        </style>
+        
+        <title>&lt;input type=&#34;color&#34;&gt; - Example - code sample</title>
+    </head>
+    <body>          
+<label for="colorWell">Ship Color:</label>
+<input type="color" value="#ff0000" id="color">
+      <button class="ship"><text style="background-color: black; text-align: top;">kittysabode</text></button>
+
+        
+            <script>
+                var color;
+var defaultcolor = "#000000";
+
+window.addEventListener("load", startup, false);
+
+function startup() {
+  color = document.querySelector("#color");
+  color.value = defaultColor;
+  color.addEventListener("input", updateFirst, false);
+  color.addEventListener("change", updateAll, false);
+  color.select();
+}
+
+function updateFirst(event) {
+  var butto = document.querySelector("butto");
+
+  if (butto) {
+    butto.style.background = event.target.value;
+  }
+}
+function updateAll(event) {
+  document.querySelectorAll("button").forEach(function(butto) {
+    button.style.background = event.target.value;
+  });
+}
+</script>
+      <style type="text/css">
+  .shipbutton {
+    width: 200px;
+    height: 200px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    font-size: 30px;
+    background-color: black;
+    
+  }
+            body {
+              padding: 0;
+              margin: 0;
+            }
+
+            svg:not(:root) {
+              display: block;
+            }
+
+            .playable-code {
+              background-color: #f4f7f8;
+              border: none;
+              border-left: 6px solid #558abb;
+              border-width: medium medium medium 6px;
+              color: #4d4e53;
+              height: 100px;
+              width: 90%;
+              padding: 10px 10px 0;
+            }
+
+            .playable-canvas {
+              border: 1px solid #4d4e53;
+              border-radius: 2px;
+            }
+
+            .playable-buttons {
+              text-align: right;
+              width: 90%;
+              padding: 5px 10px 5px 26px;
+            }
+        </style>
+        
+        <title>&lt;input type=&#34;color&#34;&gt; - Example - code sample</title>
+    </head>
+    <body>          
+<label for="colorWell">Ship Color:</label>
+<input type="color" value="#ff0000" id="colorWell">
+      <button class="shipbutton"><text style="background-color: black; text-align: top;">kittysabode</text></button>
+
+        
+            <script>
+                var colorWell;
+var defaultColor = "#000000";
+
+window.addEventListener("load", startup, false);
+
+function startup() {
+  colorWell = document.querySelector("#colorWell");
+  colorWell.value = defaultColor;
+  colorWell.addEventListener("input", updateFirst, false);
+  colorWell.addEventListener("change", updateAll, false);
+  colorWell.select();
+}
+
+function updateFirst(event) {
+  var button = document.querySelector("button");
+
+  if (button) {
+    button.style.background = event.target.value;
+  }
+}
+function updateAll(event) {
+  document.querySelectorAll("button").forEach(function(button) {
+    button.style.background = event.target.value;
+  });
+}
+</script>
+      <style type="text/css">
+  .shipbutton {
+    width: 200px;
+    height: 200px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    font-size: 30px;
+    background-color: black;
+    
+  }
+            body {
+              padding: 0;
+              margin: 0;
+            }
+
+            svg:not(:root) {
+              display: block;
+            }
+
+            .playable-code {
+              background-color: #f4f7f8;
+              border: none;
+              border-left: 6px solid #558abb;
+              border-width: medium medium medium 6px;
+              color: #4d4e53;
+              height: 100px;
+              width: 90%;
+              padding: 10px 10px 0;
+            }
+
+            .playable-canvas {
+              border: 1px solid #4d4e53;
+              border-radius: 2px;
+            }
+
+            .playable-buttons {
+              text-align: right;
+              width: 90%;
+              padding: 5px 10px 5px 26px;
+            }
+        </style>
+        
+        <title>&lt;input type=&#34;color&#34;&gt; - Example - code sample</title>
+    </head>
+    <body>          
+<label for="colorWell">Ship Color:</label>
+<input type="color" value="#ff0000" id="colorWell">
+      <button class="shipbutton"><text style="background-color: black; text-align: top;">kittysabode</text></button>
+
+        
+            <script>
+                var colorWell;
+var defaultColor = "#000000";
+
+window.addEventListener("load", startup, false);
+
+function startup() {
+  colorWell = document.querySelector("#colorWell");
+  colorWell.value = defaultColor;
+  colorWell.addEventListener("input", updateFirst, false);
+  colorWell.addEventListener("change", updateAll, false);
+  colorWell.select();
+}
+
+function updateFirst(event) {
+  var button = document.querySelector("button");
+
+  if (button) {
+    button.style.background = event.target.value;
+  }
+}
+function updateAll(event) {
+  document.querySelectorAll("button").forEach(function(button) {
+    button.style.background = event.target.value;
+  });
+}
+</script>
+      <style type="text/css">
+  .shipbutton {
+    width: 200px;
+    height: 200px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    font-size: 30px;
+    background-color: black;
+    
+  }
+            body {
+              padding: 0;
+              margin: 0;
+            }
+
+            svg:not(:root) {
+              display: block;
+            }
+
+            .playable-code {
+              background-color: #f4f7f8;
+              border: none;
+              border-left: 6px solid #558abb;
+              border-width: medium medium medium 6px;
+              color: #4d4e53;
+              height: 100px;
+              width: 90%;
+              padding: 10px 10px 0;
+            }
+
+            .playable-canvas {
+              border: 1px solid #4d4e53;
+              border-radius: 2px;
+            }
+
+            .playable-buttons {
+              text-align: right;
+              width: 90%;
+              padding: 5px 10px 5px 26px;
+            }
+        </style>
+        
+        <title>&lt;input type=&#34;color&#34;&gt; - Example - code sample</title>
+    </head>
+    <body>          
+<label for="colorWell">Ship Color:</label>
+<input type="color" value="#ff0000" id="colorWell">
+      <button class="shipbutton"><text style="background-color: black; text-align: top;">kittysabode</text></button>
+
+        
+            <script>
+                var colorWell;
+var defaultColor = "#000000";
+
+window.addEventListener("load", startup, false);
+
+function startup() {
+  colorWell = document.querySelector("#colorWell");
+  colorWell.value = defaultColor;
+  colorWell.addEventListener("input", updateFirst, false);
+  colorWell.addEventListener("change", updateAll, false);
+  colorWell.select();
+}
+
+function updateFirst(event) {
+  var button = document.querySelector("button");
+
+  if (button) {
+    button.style.background = event.target.value;
+  }
+}
+function updateAll(event) {
+  document.querySelectorAll("button").forEach(function(button) {
+    button.style.background = event.target.value;
+  });
+}
+</script>
+  </article>
+
+  <div class="cats">kittynot</div>
+<style>
+  .cats {
+    text-align: center;
+    width: 200px;
+    height: 500px;
+    color: blue;
+    background-color: #0D2A36;
+    font-size: 50px;
+  }
+</style>
+</body>
